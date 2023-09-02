@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bet More</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">PollBet</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/assets/betpage.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Live Polls</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      More
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Docs</a></li>
+                      <li><a class="dropdown-item" href="#">Help</a></li>
+                      <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <div class="wrapper">
+        <header>Who's gonna win the next game?<br></header>
+        <div class="poll-area">
+          <input type="checkbox" name="poll" id="opt-1">
+          <input type="checkbox" name="poll" id="opt-2">
+          <input type="checkbox" name="poll" id="opt-3">
+          <input type="checkbox" name="poll" id="opt-4">
+          <label for="opt-1" class="opt-1">
+            <div class="row">
+              <div class="column">
+                <span class="circle"></span>
+                <span class="text">Tyler1</span>
+              </div>
+              <span class="percent">55%</span>
+            </div>
+            <div class="progress" id="pstyle1" style='--w:55;'></div>
+          </label>
+          <label for="opt-2" class="opt-2">
+            <div class="row">
+              <div class="column">
+                <span class="circle"></span>
+                <span class="text">Not Lucas</span>
+              </div>
+              <span class="percent">20%</span>
+            </div>
+            <div class="progress" id="pstyle2" style='--w:80;'></div>
+          </label>
+          <label for="opt-3" class="opt-3">
+            <div class="row">
+              <div class="column">
+                <span class="circle"></span>
+                <span class="text">Oliver</span>
+              </div>
+              <span class="percent">20%</span>
+            </div>
+            <div class="progress" id="pstyle3" style='--w:20;'></div>
+          </label>
+          <label for="opt-4" class="opt-4">
+            <div class="row">
+              <div class="column">
+                <span class="circle"></span>
+                <span class="text">I'm confused and my head hurts</span>
+              </div>
+              <span class="percent">96%</span>
+            </div>
+            <div class="progress" id="pstyle4" style='--w:96;'></div>
+          </label>
+        </div>
+      </div>
+    </section>
+   
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
